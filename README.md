@@ -49,5 +49,10 @@ You must register for an official Vine account and use those credentials in the 
 
 ## TODO
 
-* add methods for all endpoints
-  ** test
+### add methods for all endpoints
+
+* "timelines/tags/"
+* "timelines/venues/"
+* "users/search/"
+* "tags/search/"
+* 
