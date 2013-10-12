@@ -1,4 +1,4 @@
 Vine4j
 ======
 
-a library that utilizes the unofficial Vine API
+A Java library that utilizes the unofficial Vine API
