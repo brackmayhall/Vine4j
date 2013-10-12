@@ -55,4 +55,3 @@ You must register for an official Vine account and use those credentials in the 
 * "timelines/venues/"
 * "users/search/"
 * "tags/search/"
-* 
