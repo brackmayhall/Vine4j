@@ -43,4 +43,6 @@ Vine4j/
 │   ├── httpcore-4.2.4.jar
 ```
 
+## Vine Account Login Credentials
+
 You must register for an official Vine account and use those credentials in the Vine4j. java file.
