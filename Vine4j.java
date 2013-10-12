@@ -26,13 +26,13 @@ public class Vine4j {
 	 * username WITHOUT twitter connect.
 	 * Need to create an official vine login
 	 */
-	private static final String USERNAME = "PUT YOUR USERNAME HERE!!!";
+	private static final String USERNAME = ""; //add username here
 	
 	/**
 	 * password WITHOUT twitter connect.
 	 * Need to create an official vine login
 	 */
-	private static final String PASSWORD = "PUT YOUR PASSWORD HERE!!!";
+	private static final String PASSWORD = ""; //add password here
 	
 	/**
 	 * Gson Pojo Util.
@@ -95,6 +95,20 @@ public class Vine4j {
 	private static final String SEARCH_TAG = "tags/search/";
 	
 	/**
+	 * @return the username
+	 */
+	public static final String getUsername() {
+		return USERNAME;
+	}
+
+	/**
+	 * @return the password
+	 */
+	public static final String getPassword() {
+		return PASSWORD;
+	}
+	
+	/**
 	 * used for loging in and getting session keys.
 	 * @param username username
 	 * @param password password
@@ -138,7 +152,7 @@ public class Vine4j {
 	public static Vine executeGet(final String page, final String size, final String type, final String param)
 	{
 		
-		HttpGet get = new HttpGet(BASE_URL + type + "/" + param);
+		HttpGet get = new HttpGet(BASE_URL + type + param);
 		Vine vineResponse = null;
 	    try {
 
@@ -155,6 +169,7 @@ public class Vine4j {
 
 	        String line = "";
 	        while ((line = rd.readLine()) != null) {
+	        	System.out.println(line);
 	        	vineResponse = gson.fromJson(line, Vine.class);
 	        }
 	        
@@ -208,37 +223,19 @@ public class Vine4j {
 		return executeGet(page, size, TAG, params);
 	}
 	
-	/**
-	 * Main to get some vines.
-	 * @param some args.
-	 */
-  public static void main(String[] args) {
-    
-	  Vine4j vine4j = new Vine4j();
-	  
-	  vine4j.login(USERNAME, PASSWORD);
-	  
-	  VineAuthData vineData = vineAuth.getData();
-  	  System.out.println(vineData.getUsername());
-  	  System.out.println(vineData.getUserId());
-  	  System.out.println(vineData.getKey());
-  	  
+	public final Vine searchTags(final String page, final String size, final String params) {
+		return executeGet(page, size, SEARCH_TAG, params);
+	}
+	
+	public final Vine getVenues(final String page, final String size, final String params) {
+		return executeGet(page, size, VENUES, params);
+	}
+	
+	public final Vine searchUser(final String page, final String size, final String params) {
+		return executeGet(page, size, SEARCH_USER, params);
+	}
 
-  	  while(true)
-  	  {
-  		  Vine tempVines = vine4j.getPopular("1", "5");
-  		  
-  		  for(Records record : tempVines.getData().getRecords())
-  		  {
-  			  System.out.println(record.getVideoLowURL());
-  		  }
-  		  try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-  	  }
-  }
+	
+
 
 } 
