@@ -1,7 +1,7 @@
 Vine4j
 ======
 
-A Java library that utilizes the unofficial Vine API
+A Java library that utilizes the unofficial Vine API with JSON to POJO already handled.
 
 ## Dependencies
 
