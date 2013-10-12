@@ -46,3 +46,8 @@ Vine4j/
 ### Vine Account Login Credentials
 
 You must register for an official Vine account and use those credentials in the "Vine4j.java" file.
+
+## TODO
+
+* add methods for all endpoints
+  ** test
