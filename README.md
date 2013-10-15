@@ -48,23 +48,5 @@ Vine4j/
 You must register for an official Vine account and use those credentials in the "Vine4j.java" file.
 
 ## TODO
-Implement the following endpoints
-
-
-
-SIGNUP			=	BASE_URL+"/users"
-ME			=	BASE_URL+"/users/me"
-PROFILE			=	BASE_URL+"/users/profiles/{userId}"
-NOTIFICATIONS		=	BASE_URL+"/users/{userId}/notifications"
-PENDING_NOTIFICATIONS	=	BASE_URL+"/users/{userId}/pendingNotificationsCount"
-USER_TIMELINE		=	BASE_URL+"/timelines/users/{userId}"
-TAG_TIMELINE		=	BASE_URL+"/timelines/{tag}"
-POST_COMMENTS		=	BASE_URL+"/posts/{postId}/comments"
-POST_COMMENT		=	BASE_URL+"/posts/{postId}/comments/{commentId}"
-USER_LIKES		=	BASE_URL+"/timelines/users/{userId}/likes"
-POST_LIKES		=	BASE_URL+"/posts/{postId}/likes"
-USER_FOLLOW		=	BASE_URL+"/users/{userId}/followers"
-USER_BLOCK		=	BASE_URL+"/users/{myUserId}/blocked/{userId}"
-POST_REPORT		=	BASE_URL+"/posts/{postId}/complaints"
-POST_LIKE		=	BASE_URL+"/posts/{postId}/likes"
-POST_ADD_COMMENT	=	BASE_URL+"/posts/{postId}/comments"
+Implement remaining endpoints
+- can find these in the other Vine4j project in the "Constants.java" file
