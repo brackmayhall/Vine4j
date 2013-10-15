@@ -48,24 +48,23 @@ Vine4j/
 You must register for an official Vine account and use those credentials in the "Vine4j.java" file.
 
 ## TODO
-Implement the following
-	public static final String VINE_API_BASE_URL="https://api.vineapp.com";
-	public static final String VINE_API_LOGIN=VINE_API_BASE_URL+"/users/authenticate";
-	public static final String VINE_API_SIGNUP=VINE_API_BASE_URL+"/users";
-	public static final String VINE_API_ME=VINE_API_BASE_URL+"/users/me";
-	public static final String VINE_API_PROFILE=VINE_API_BASE_URL+"/users/profiles/{userId}";
-	public static final String VINE_API_NOTIFICATIONS=VINE_API_BASE_URL+"/users/{userId}/notifications";
-	public static final String VINE_API_PENDING_NOTIFICATIONS=VINE_API_BASE_URL+"/users/{userId}/pendingNotificationsCount";
-	public static final String VINE_API_SEARCH_USER=VINE_API_BASE_URL+"/users/search/{term}";
-	public static final String VINE_API_USER_TIMELINE=VINE_API_BASE_URL+"/timelines/users/{userId}";
-	public static final String VINE_API_TAG_TIMELINE=VINE_API_BASE_URL+"/timelines/{tag}";
-	public static final String VINE_API_POST_COMMENTS=VINE_API_BASE_URL+"/posts/{postId}/comments";
-	public static final String VINE_API_POST_COMMENT=VINE_API_BASE_URL+"/posts/{postId}/comments/{commentId}";
-	public static final String VINE_API_USER_LIKES=VINE_API_BASE_URL+"/timelines/users/{userId}/likes";
-	public static final String VINE_API_POST_LIKES=VINE_API_BASE_URL+"/posts/{postId}/likes";
-	public static final String VINE_API_USER_FOLLOW=VINE_API_BASE_URL+"/users/{userId}/followers";
-	public static final String VINE_API_USER_BLOCK=VINE_API_BASE_URL+"/users/{myUserId}/blocked/{userId}";
-	public static final String VINE_API_POST_REPORT=VINE_API_BASE_URL+"/posts/{postId}/complaints";
-	public static final String VINE_API_POST_LIKE=VINE_API_BASE_URL+"/posts/{postId}/likes";
-	public static final String VINE_API_POST_ADD_COMMENT=VINE_API_BASE_URL+"/posts/{postId}/comments";
-	public static final String VINE_API_SEACRH_TAG=VINE_API_BASE_URL+"/tags/search/{tag}";
+Implement the following endpoints
+
+
+
+SIGNUP			=	BASE_URL+"/users"
+ME			=	BASE_URL+"/users/me"
+PROFILE			=	BASE_URL+"/users/profiles/{userId}"
+NOTIFICATIONS		=	BASE_URL+"/users/{userId}/notifications"
+PENDING_NOTIFICATIONS	=	BASE_URL+"/users/{userId}/pendingNotificationsCount"
+USER_TIMELINE		=	BASE_URL+"/timelines/users/{userId}"
+TAG_TIMELINE		=	BASE_URL+"/timelines/{tag}"
+POST_COMMENTS		=	BASE_URL+"/posts/{postId}/comments"
+POST_COMMENT		=	BASE_URL+"/posts/{postId}/comments/{commentId}"
+USER_LIKES		=	BASE_URL+"/timelines/users/{userId}/likes"
+POST_LIKES		=	BASE_URL+"/posts/{postId}/likes"
+USER_FOLLOW		=	BASE_URL+"/users/{userId}/followers"
+USER_BLOCK		=	BASE_URL+"/users/{myUserId}/blocked/{userId}"
+POST_REPORT		=	BASE_URL+"/posts/{postId}/complaints"
+POST_LIKE		=	BASE_URL+"/posts/{postId}/likes"
+POST_ADD_COMMENT	=	BASE_URL+"/posts/{postId}/comments"
